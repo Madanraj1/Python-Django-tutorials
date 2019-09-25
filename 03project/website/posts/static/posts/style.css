@@ -1,0 +1,14 @@
+body{
+  background-color: #ecf0f1;
+}
+.card-body{
+  background: #2c3e50;
+  color: #dff9fb;
+
+}
+.card{
+  height: 20rem;
+  top: 0;
+  margin-left: 25%;
+  margin-top: 2%;
+}
