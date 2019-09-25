@@ -1,0 +1,21 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+
+<div class="detail">
+  <h2> {{ postt.title }} </h2>
+  <p> {{ postt.body }} </p>
+  <p>Commented :<b>  {{ postt.commentext }} </b> </p>
+</div>
+
+<div class="commentsection">
+  <form method="POST" action="{% url 'comment' postt.id %}" >
+    {% csrf_token %}
+    {{ form.text }}
+    <input type="submit" value="Comment">
+  </form>
+</div>
+
+ <h4><a href="{% url 'post_delete' postt.pk %}">Delete this post</a></h4>
+
+{% endblock %}
