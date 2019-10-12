@@ -1,0 +1,59 @@
+body{
+
+  background-color: #2f3542;
+}
+.content{
+  background-color: #f5f6fa;
+  color:#34495e;
+  margin-top: 1%;
+
+}
+.post_title{
+  color: #22a6b3;
+}
+
+.post_title_class{
+  color: #22a6b3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.post_title_class:hover{
+  color: #079992;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home_button{
+  color: #0a3d62;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.home_button:hover{
+  color: #0a3d62;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.commented_para{
+
+  color: #1B1464;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.post_body{
+  font-size: 20px;
+  font-family: 'Concert One', cursive;
+}
+
+
+.comment_form{
+  color: blue;
+
+}
+
+.comment_border {
+
+}
