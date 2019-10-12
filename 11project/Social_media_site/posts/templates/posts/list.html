@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="create_post container">
+  <form action="." method="post">
+    {% csrf_token %}
+    {{ post_form.author}}
+    {{ post_form.title|as_crispy_field}}
+    {{ post_form.slug|as_crispy_field}}
+    {{ post_form.body|as_crispy_field}}
+    <p><button type="submit" class="btn btn-outline-info">Post</button></p>
+  </form>
+</div>
+
+
+
+
+
+
+{% for post in posts %}
+<h2>
+  <a class="post_title_class container " href="{{ post.get_absolute_url }}">{{ post.title }}  </a>
+</h2>
+<p class="date">
+  published {{ post.created }} by {{ post.author }}
+</p>
+{{post.body|truncatewords:30|linebreaks }}
+{% endfor %}
+{% endblock %}
